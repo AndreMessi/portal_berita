@@ -67,10 +67,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-9">
-          <div class="row mb-2">
+          <div class="row mb-2" v-for="user in users" :key="user.id">
             <div class="col-md-12">
               <div class="card">
-                <div class="card-body" v-for="item in items" :key="item">
+                <div class="card-body">
                   <div class="row">
                     <div class="col-md-4">
                       <img
@@ -80,7 +80,7 @@
                     <div class="col-md-8">
                       <div class="news-title">
                         <a href="#">
-                          <h5>{{item.tittle}}</h5>
+                          <h5>{{user.tittle}}</h5>
                         </a>
                       </div>
                       <div class="news-cats">
@@ -88,25 +88,25 @@
                           <li class="list-inline-item">
                             <i class="fa fa-folder-o text-danger"></i>
                             <a href="#">
-                              <small>Sport</small>
+                              <small>{{user.category}}</small>
                             </a>
                           </li>
                           <li class="list-inline-item">
                             <i class="fa fa-folder-o text-danger"></i>
                             <a href="#">
-                              <small>{{item.author}}</small>
+                              <small>{{user.author}}</small>
                             </a>
                           </li>
                           <li class="list-inline-item">
                             <i class="fa fa-folder-o text-danger"></i>
                             <a href="#">
-                              <small>7 Mei 2019</small>
+                              <small>{{user.tgl_posting}}</small>
                             </a>
                           </li>
                         </ul>
                       </div>
                       <div class="news-content">
-                        <p>{{item.description}}</p>
+                        <p>{{user.description}}</p>
                       </div>
                       <div class="news-buttons">
                         <button
@@ -320,15 +320,21 @@ import axios from 'axios'
 export default {
   data(){
     return{
-      items :"",
-      item :""
+      users: []
     }
   },
-  mounted(){
-    axios.get('http://localhost:3000/berita')
-      .then(response => {
-        this.item = response.item
+  methods: {
+    load(){
+        axios.get('http://localhost:3000/berita').then(res => {
+        this.users = res.data 
+      }).catch ((err) => {
+        console.log(err);
       })
+    }
+   },
+
+  mounted(){
+    this.load()
   }
 };
 </script>

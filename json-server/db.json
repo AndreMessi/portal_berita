@@ -1,0 +1,52 @@
+{
+  "berita": [
+    {
+      "id": 1,
+      "tittle": "Persaingan Juara Liga Inggris Memang Sengit, tapi Takkan Ada Keajaiban",
+      "category":"sport",
+      "author": "Andre Putra",
+      "tgl_posting":2019,
+      "description": "Manchester City dan Liverpool masih bersaing sengit di Liga Inggris musim ini. Kendati demikian, takkan ada keajaiban di pekan pamungkas Premier League."
+    },
+    {
+      "id": 2,
+      "tittle": "Bank Mandiri Siapkan Dana Rp 54,9 T Selama Ramadan",
+      "category":"finance",
+      "author": "Andre Putra",
+      "tgl_posting":"2019",
+      "description": "Bank Mandiri menyiapkan dana tunai sebesar Rp 54,9 triliun. Dana ini dipersiapkan selama bulan Ramadan dan menjelang Idul Fitri."
+    },
+    {
+      "id": 3,
+      "tittle": "Inspiratif! Pengusaha Kafe Ini Pekerjakan Difabel Sebagai Barista hingga Kasir",
+      "category":"sosial budaya",
+      "author": "Andre Putra",
+      "tgl_posting":"2019",
+      "description": "Usia kafe ini memang baru sebulan tapi antusiasme pengunjungnya membludak tak terbendung. Ternyata para pegawai di kafe ini adalah orang-orang difabel."
+    },
+    {
+      "id": 4,
+      "tittle": "Muslimnesia Ingin Jadi Aplikasinya Para Muslim Milenial",
+      "category":"finance",
+      "author": "Andre Putra",
+      "tgl_posting":"2019",
+      "description": "Kebutuhan informasi muslim muda modern Indonesia tumbuh kian besar seiring dengan meningkatnya antusiasme mendalami ajaran Islam yang dimulai sejak usia muda."
+    },
+    {
+      "tittle": "tes",
+      "category":"tes",
+      "author": "andre putra",
+      "tgl_posting":"2019",
+      "description": "tes description",
+      "id": "5\n"
+    },
+    {
+      "id": "6\n",
+      "tittle": "tes",
+      "category":"tes",
+      "author": "andre putra",
+      "tgl_posting":"2019",
+      "description": "tes description"
+    }
+  ]
+}
